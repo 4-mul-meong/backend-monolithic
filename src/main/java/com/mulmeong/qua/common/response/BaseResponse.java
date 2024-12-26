@@ -1,9 +1,9 @@
-package com.mulmeong.test.common.response;
+package com.mulmeong.qua.common.response;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 
-import static com.mulmeong.test.common.response.BaseResponseStatus.SUCCESS;
+import static com.mulmeong.qua.common.response.BaseResponseStatus.SUCCESS;
 
 public record BaseResponse<T>(HttpStatusCode httpStatus, Boolean isSuccess, String message, int code, T result) {
 
